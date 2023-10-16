@@ -13,12 +13,11 @@ window.onload = function() {
   let sustantivo = ["tigre", "gato"];
   let extension = [".com", ".net", ".io", ".es"];
 
-  for (let i = 0; i < pronombre.length; i++) {
-    for (let e = 0; e < adj.length; e++) {
-      for (let a = 0; a < sustantivo.length; a++) {
-        for (let u = 0; u < extension.length; u++) {
-          const dominioFinal =
-            pronombre[i] + adj[e] + sustantivo[a] + extension[u];
+  for (let pro of pronombre) {
+    for (let adje of adj) {
+      for (let sus of sustantivo) {
+        for (let ext of extension) {
+          const dominioFinal = pro + adje + sus + ext;
           console.log(dominioFinal);
         }
       }
